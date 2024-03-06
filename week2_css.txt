@@ -1,0 +1,8 @@
+//2.2
+h1 {font-family: sans-serif;}
+p {font-family: sans-serif;}
+a {color: darkgreen;}
+s {color: grey;}
+mark {color: darkblue; background-color: pink;}
+h2 {text-align: left; font-family: sans-serif;}
+pre {font-family: monospace;}
