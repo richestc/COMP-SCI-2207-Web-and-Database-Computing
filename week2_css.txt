@@ -6,3 +6,7 @@ s {color: grey;}
 mark {color: darkblue; background-color: pink;}
 h2 {text-align: left; font-family: sans-serif;}
 pre {font-family: monospace;}
+
+//2.3
+h3 {color: rgba(0, 0, 139, 0.8)}
+pre.transparent-text {color: rgba(0, 0, 0, 0.5);}
