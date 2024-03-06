@@ -1,2 +1,7 @@
-h3 {color: rgba(0, 0, 139, 0.8)}
-pre.transparent-text {color: rgba(0, 0, 0, 0.5);}
+h1 {font-family: sans-serif;}
+p {font-family: sans-serif;}
+a {color: darkgreen;}
+s {color: grey;}
+mark {color: darkblue; background-color: pink;}
+h2 {text-align: left; font-family: sans-serif;}
+pre {font-family: monospace;}
