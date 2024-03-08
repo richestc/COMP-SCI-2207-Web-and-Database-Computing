@@ -32,3 +32,30 @@ div.blue-border2 {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+
+div.top-nested {
+    border: 2px solid red;
+    background-color: blue;
+}
+div.top-nested2 {
+    margin: 10px 20px;
+    border: 2px solid red;
+    background-color: yellow;
+    text-align: right;
+    height: 200px;
+    width: 700px;
+    padding: 12px;
+}
+
+div.bottom-nested {
+    border: 2px solid red;
+    background-color: blue;
+}
+div.bottom-nested2 {
+    border: 2px solid red;
+    background-color: yellow;
+    text-align: right;
+    height: 400px;
+    width: 400px;
+    padding: 12px;
+}
