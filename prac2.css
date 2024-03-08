@@ -11,6 +11,27 @@ pre.transparent-text {color: rgba(0, 0, 0, 0.5);}
 
 body {background-color: #DCF5F5; background-image: url('cross.png');}
 
-div.content {background-color: white;}
+div.content {background-color: white;
+
+    border: 1px darkgrey; border-radius: 8px; 
+}
 span.blue {color: blue;}
 span.fancy {font-family: cursive;}
+
+div.red-border {border: 2px solid red;}
+div.blue-border {border: 2px solid blue;}
+div.red-border2 { 
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    border-top: 2px solid red;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+div.blue-border2 {
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-top: 2px solid blue;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
