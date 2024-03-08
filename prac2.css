@@ -16,6 +16,8 @@ span.blue {color: blue;}
 span.fancy {font-family: cursive;}
 
 div.content2 {background-color: white; border: 1px darkgrey; border-radius: 8px;}
+span.red-border {border: 2px solid red;}
+span.red-outline {outline: 2px solid red;}
 div.red-border {border: 2px solid red;}
 div.blue-border {border: 2px solid blue;}
 div.red-border2 { 
