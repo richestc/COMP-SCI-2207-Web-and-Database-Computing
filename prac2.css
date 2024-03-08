@@ -45,6 +45,7 @@ div.top-nested2 {
     height: 200px;
     width: 700px;
     padding: 12px;
+    box-sizing: border-box;
 }
 
 div.bottom-nested {
@@ -58,4 +59,6 @@ div.bottom-nested2 {
     height: 400px;
     width: 400px;
     padding: 12px;
+    box-sizing: border-box;
+    margin: auto;
 }
