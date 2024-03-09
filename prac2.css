@@ -60,5 +60,32 @@ div.bottom-nested2 {
     width: 400px;
     padding: 12px;
     box-sizing: border-box;
-    margin: auto;
+    margin: auto; /* Position div in center */
 }
+
+
+div.content3 {background-color: white; border: 1px darkgrey; border-radius: 8px; padding: 10px;}
+blockquote{
+    font-family: Raleway;
+    color: dimgrey;
+    line-height: 1.5;
+    word-spacing: 0.2em;
+    text-align: justify;
+}
+h4 {
+    font-family: Raleway;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: normal;
+}
+div.container {
+    color: #BFCFD4;
+    text-align: center;
+    font-size: 36px;
+    padding: 
+    10px;
+}
+h1.raleway {font-family: Raleway;}
+h2.raleway {font-family: Raleway;}
+p.noto-serif {font-family: Noto-Serif;}
+
