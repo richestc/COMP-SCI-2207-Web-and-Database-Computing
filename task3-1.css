@@ -35,11 +35,11 @@ div p span span {
 }
 
 div p span span.color {
-    color: blue;
+    color: green;
 }
 
 p span span.normal {
-    color: blue;
+    color: green;
 }
 
 div + p span span.color {
