@@ -52,10 +52,10 @@ function post_time_content(){
         var selectedStyle = document.querySelectorAll('input[name="style"]:checked');
 
         for(var j=0;j<selectedStyle.length;j++){
-            if(selectedStyle[j].value === 'bold'){
+            if(selectedStyle[j].value = 'bold'){
                 postContentElement.style.fontWeight = 'bold';
             } 
-            else if(selectedStyle[j].value === 'italic'){
+            else if(selectedStyle[j].value = 'italic'){
                 postContentElement.style.fontStyle = 'italic';
             }
         }
@@ -94,16 +94,7 @@ function background_colour(){
 
 //section 3.6
 function posts_slider() {
-    var sliderValue = document.querySelector('input[name="visible"]').value *2;
-    var allPosts = document.querySelectorAll('.post-time, .post-content');
-    for(var i=0;i<allPosts.length;i++){
-        if(i<sliderValue){
-            allPosts[i].style.display = 'block';
-        } 
-        else{
-            allPosts[i].style.display = 'none';
-        }
-    }
+    
 }
 
 
