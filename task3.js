@@ -35,15 +35,15 @@ function menu_hide_button() {
     var mainDiv = document.getElementById('main');
     var menuDiv = document.getElementById('menu');
 
-    if(mainDiv.style.display === 'none'){
-        // Main div is currently hidden, so show it and hide the menu div
-        mainDiv.style.display = 'block';
-        menuDiv.style.display = 'none';
-    } 
-    else{
-        // Main div is currently visible, so hide it and show the menu div
+    if(menuDiv.style.display === 'none'){
+        // Menu div is currently hidden, so show it and hide the main div
         mainDiv.style.display = 'none';
         menuDiv.style.display = 'block';
+    } 
+    else{
+        // Menu div is currently visible, so hide it and show the main div
+        mainDiv.style.display = 'block';
+        menuDiv.style.display = 'none';
     }
 }
 
