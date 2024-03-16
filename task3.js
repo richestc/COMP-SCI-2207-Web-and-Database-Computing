@@ -31,13 +31,20 @@ function post_time_content(){
 }
 
 //section 3.3
-function menu_hide_button(){
-    // Get references to the main and menu divs
+function menu_hide_button() {
     var mainDiv = document.getElementById('main');
     var menuDiv = document.getElementById('menu');
 
-    // Hide both divs by setting their display property to 'none'
-    mainDiv.style.display = 'none';
-    menuDiv.style.display = 'block';
+    if(mainDiv.style.display === 'none'){
+        // Main div is currently hidden, so show it and hide the menu div
+        mainDiv.style.display = 'block';
+        menuDiv.style.display = 'none';
+    } 
+    else{
+        // Main div is currently visible, so hide it and show the menu div
+        mainDiv.style.display = 'none';
+        menuDiv.style.display = 'block';
+    }
 }
+
 
