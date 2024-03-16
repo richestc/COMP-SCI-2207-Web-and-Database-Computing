@@ -39,7 +39,7 @@ function menu_hide_button() {
         // Menu div is currently hidden, so show it and hide the main div
         mainDiv.style.display = 'none';
         menuDiv.style.display = 'block';
-    } 
+    }
     else{
         // Menu div is currently visible, so hide it and show the main div
         mainDiv.style.display = 'block';
