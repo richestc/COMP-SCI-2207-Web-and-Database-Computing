@@ -43,7 +43,7 @@ function post_time_content(){
         // Append the elements to the posts div
         var postsDiv = document.getElementById('posts');
 
-        // Apply color only to the new post
+        // Apply color only to the new post (3.4)
         if(colour != ''){
             postContentElement.style.color = colour;
         }
@@ -57,7 +57,7 @@ function post_time_content(){
 }
 
 //section 3.3
-function menu_hide_button() {
+function menu_hide_button(){
     var mainDiv = document.getElementById('main');
     var menuDiv = document.getElementById('menu');
 
@@ -73,3 +73,8 @@ function menu_hide_button() {
     }
 }
 
+//section 3.5
+function background_colour(){
+    var background = document.getElementById('background_colour').value; //Colour user enters
+    document.body.style.backgroundColor = background;
+}
