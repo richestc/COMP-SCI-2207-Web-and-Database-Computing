@@ -29,3 +29,15 @@ function post_time_content(){
     postsDiv.appendChild(postContentElement);
     postsDiv.appendChild(document.createElement('br'));
 }
+
+//section 3.3
+function menu_hide_button(){
+    // Get references to the main and menu divs
+    var mainDiv = document.getElementById('main');
+    var menuDiv = document.getElementById('menu');
+
+    // Hide both divs by setting their display property to 'none'
+    mainDiv.style.display = 'none';
+    menuDiv.style.display = 'block';
+}
+
