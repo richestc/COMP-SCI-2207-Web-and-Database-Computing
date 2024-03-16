@@ -48,6 +48,19 @@ function post_time_content(){
             postContentElement.style.color = colour;
         }
 
+        // Apply selected style to post content (3.6)
+        var selectedStyle = document.querySelectorAll('input[name="style"]:checked');
+
+        for(var j=0;j<selectedStyle.length;j++){
+            if(selectedStyle[j].value === 'bold'){
+                postContentElement.style.fontWeight = 'bold';
+            } 
+            else if(selectedStyle[j].value === 'italic'){
+                postContentElement.style.fontStyle = 'italic';
+            }
+        }
+        
+
         postsDiv.appendChild(postTimeElement);
         postsDiv.appendChild(document.createElement('br'));
         postsDiv.appendChild(postContentElement);
@@ -76,5 +89,21 @@ function menu_hide_button(){
 //section 3.5
 function background_colour(){
     var background = document.getElementById('background_colour').value; //Colour user enters
-    document.body.style.backgroundColor = background;
+    document.body.style.backgroundColor = background; //Makes background colour to user input
 }
+
+//section 3.6
+function posts_slider() {
+    var sliderValue = document.querySelector('input[name="visible"]').value *2;
+    var allPosts = document.querySelectorAll('.post-time, .post-content');
+    for(var i=0;i<allPosts.length;i++){
+        if(i<sliderValue){
+            allPosts[i].style.display = 'block';
+        } 
+        else{
+            allPosts[i].style.display = 'none';
+        }
+    }
+}
+
+
