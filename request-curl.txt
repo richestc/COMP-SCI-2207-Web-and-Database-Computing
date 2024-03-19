@@ -1,10 +1,4 @@
-content-type	text/html; charset=ISO-8859-1
-content-security-policy-report-only	object-src 'none';base-uri 'self';script-src 'nonce--uybM9bAPNzkZZKv8XrK5g' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
-date	Tue, 19 Mar 2024 13:46:48 GMT
-server	gws
-x-xss-protection	0
-x-frame-options	SAMEORIGIN
-expires	Tue, 19 Mar 2024 13:46:48 GMT
-cache-control	private
-set-cookie	1P_JAR=2024-03-19-13; expires=Thu, 18-Apr-2024 13:46:48 GMT; path=/; domain=.google.com; Secure
-alt-svc	h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+curl --request HEAD \
+  --url https://google.com/ \
+  --header 'User-Agent: insomnia/8.6.1' \
+  --cookie '1P_JAR=2024-03-19-13; AEC=Ae3NU9N9GtsIkpiwoj71ujWRZjWB8S340h5X52TVsjhyc4FMDG8gp1kitg; NID=512%3Do6FWAwVwyLXD2OUKRS1TZUuoe0nn7BPTOWjXHchL7sFqDF9mVcYpQJXchnanIxvxXrthD_iPN5ZcRFpY-ODvPMzkxw33uw1tvkBY6yWaqBjA3o16KXWdmsUCFB9FCgKGNIq-DHyfwebNyIGLo1b0fYQ_YBnaCRQkeZYNI4t2484'
