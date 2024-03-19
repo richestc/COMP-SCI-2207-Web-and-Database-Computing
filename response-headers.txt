@@ -1,0 +1,15 @@
+server	nginx/1.14.0 (Ubuntu)
+date	Tue, 19 Mar 2024 13:40:06 GMT
+content-type	text/html; charset=utf-8
+content-length	107678
+x-view-name	canonicalwebteam.templatefinder.templatefinder.template_finder
+x-clacks-overhead	GNU Terry Pratchett
+permissions-policy	interest-cohort=()
+cache-control	max-age=60, stale-while-revalidate=86400, stale-if-error=300
+x-content-type-options	NOSNIFF
+x-vcs-revision	1710826447-b06e2b2
+x-request-id	697086b3b6cad3a8cc55cae8df758572
+strict-transport-security	max-age=15724800
+link	<https://assets.ubuntu.com>; rel=preconnect; crossorigin, <https://assets.ubuntu.com>; rel=preconnect, <https://res.cloudinary.com>; rel=preconnect
+x-cache-status	HIT from content-cache-il3/0
+accept-ranges	bytes
