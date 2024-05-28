@@ -1,0 +1,173 @@
+<!-- <!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Actors</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" crossorigin="anonymous">
+    <style>
+
+      main, header, footer {
+        padding: 1em;
+        box-sizing: border-box;
+      }
+
+      header, footer {
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header><h1>Actors!</h1></header>
+
+    <main class="pure-g">
+
+      <div class="pure-u-2-3">
+
+        <table class="pure-table pure-table-horizontal">
+          <thead>
+              <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Some</td>
+                  <td>Actor</td>
+              </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <aside class="pure-u-1-3">
+        <form class="pure-form pure-form-stacked">
+          <fieldset>
+              <legend>Add Actor</legend>
+              <label for="actor-first-name">First Name</label>
+              <input type="text" id="actor-first-name" placeholder="First/Given Name" />
+              <label for="actor-last-name">Last Name</label>
+              <input type="text" id="actor-last-name" placeholder="First/Family Name" />
+              <button type="button" class="pure-button pure-button-primary">Add</button>
+          </fieldset>
+        </form>
+      </aside>
+
+    </main>
+
+    <footer>&copy; 2023 WDC</footer>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Actors</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" crossorigin="anonymous">
+    <style>
+
+      main, header, footer {
+        padding: 1em;
+        box-sizing: border-box;
+      }
+
+      header, footer {
+        text-align: center;
+      }
+
+    </style>
+  </head>
+
+  <body onload="actor()">
+
+    <header><h1>Actors!</h1></header>
+
+    <main class="pure-g">
+
+      <div class="pure-u-2-3">
+
+        <table class="pure-table pure-table-horizontal">
+          <thead>
+              <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Some</td>
+                  <td>Actor</td>
+              </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <aside class="pure-u-1-3">
+        <form class="pure-form pure-form-stacked">
+          <fieldset>
+              <legend>Add Actor</legend>
+              <label for="actor-first-name">First Name</label>
+              <input type="text" id="actor-first-name" placeholder="First/Given Name" />
+              <label for="actor-last-name">Last Name</label>
+              <input type="text" id="actor-last-name" placeholder="First/Family Name" />
+              <button type="button" onclick="add()" class="pure-button pure-button-primary">Add</button>
+          </fieldset>
+        </form>
+      </aside>
+    </main>
+
+    <footer>&copy; 2023 WDC</footer>
+
+    <script>
+      function actor() {
+        let xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var tBody = document.getElementsByTagName("tbody")[0];
+
+            tBody.innerHTML = '';
+
+            var JSON = JSON.parse(this.responseText);
+
+            for (var index = 0; index < JSON.length; index++) {
+              tBody.innerHTML += 
+              `<tr>
+                <td>
+                  ${JSON[index].first_name}
+                </td>
+                <td>
+                  ${json[index].last_name}
+                </td>
+              </tr>`;
+            }
+          }
+        }
+
+        xhttp.open("GET", "/actors", true);
+        xhttp.send();
+      }
+
+      function add() {
+        let xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function () {
+        }
+
+        xhttp.open("POST", "/add", true);
+
+        xhttp.setRequestHeader("Content-type", "application/json");
+
+        xhttp.send(JSON.stringify({first_name: document.getElementById("actor-first-name").value,last_name: document.getElementById("actor-last-name").value
+
+        }));
+      }
+
+    </script>
+
+  </body>
+
+</html>
